@@ -1,0 +1,12 @@
+my_project:
+  tags:
+    - project-fatigue
+  script:
+    - echo Running pipeline!
+    - python -m venv my_virtual_env
+    - my_virtual_env\Scripts\activate
+    - pip install numpy
+    - pip install pytest
+    - pip install matplotlib
+    - cd tests
+    - pytest -v
